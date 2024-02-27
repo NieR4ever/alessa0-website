@@ -1,6 +1,11 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
-
-const routes: Array<RouteRecordRaw> = [];
+import about from "@/views/aw-about.vue";
+const routes: Array<RouteRecordRaw> = [
+  {
+    path: "/about",
+    component: about,
+  },
+];
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
